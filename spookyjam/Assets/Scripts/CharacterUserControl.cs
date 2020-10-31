@@ -21,6 +21,12 @@ public class CharacterUserControl : MonoBehaviour
     public GameObject waterUI;
     public GameObject rockUI;
 
+    public AudioSource aparecerFuego;
+    public AudioSource desaparecerFuego;
+    public AudioSource derrumbar;
+    public AudioSource agua;
+    public AudioSource hielo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,6 +105,7 @@ public class CharacterUserControl : MonoBehaviour
                             phasingZone.SetActive(false);
                             m_CanvasMessage.SetActive(false);
                             crf.StartCooldown(5);
+                            desaparecerFuego.Play();
                         }
                     }
                     break;
@@ -112,6 +119,7 @@ public class CharacterUserControl : MonoBehaviour
                             phasingZone.SetActive(false);
                             m_CanvasMessage.SetActive(false);
                             crw.StartCooldown(5);
+                            hielo.Play();
                         }
                     }
                     break;
@@ -125,6 +133,7 @@ public class CharacterUserControl : MonoBehaviour
                             phasingZone.SetActive(false);
                             m_CanvasMessage.SetActive(false);
                             cr.StartCooldown(5);
+                            derrumbar.Play();
                         }
                     }
                     break;

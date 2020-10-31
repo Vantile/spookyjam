@@ -186,6 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PhasingType: Fire
+  aparecer: {fileID: 0}
+  desaparecer: {fileID: 0}
 --- !u!1 &5179602071053119279
 GameObject:
   m_ObjectHideFlags: 0
