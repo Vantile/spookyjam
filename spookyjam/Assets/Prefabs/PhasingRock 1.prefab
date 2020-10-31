@@ -985,6 +985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7055150527787648839}
   - component: {fileID: 1993007684992415304}
+  - component: {fileID: 3874958877020943655}
   m_Layer: 0
   m_Name: Activador
   m_TagString: Untagged
@@ -1032,6 +1033,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &3874958877020943655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741013990604541194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ba6073a67ecd543940d50d25d72e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PhasingType: Rock
 --- !u!1 &6565227027799508736
 GameObject:
   m_ObjectHideFlags: 0

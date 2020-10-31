@@ -11,6 +11,9 @@ public class CooldownRadial : MonoBehaviour
 	private float m_RemainingTime;
 	private Image m_Image;
 
+	public bool activated = false;
+	public bool ready = true;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -31,6 +34,7 @@ public class CooldownRadial : MonoBehaviour
 		{
 			// TODO 2 - Desactivamos el gameobject para que no se pinte
 			//gameObject.SetActive(false);
+			ready = true;
 		}
 		else
 		{
@@ -51,6 +55,7 @@ public class CooldownRadial : MonoBehaviour
 	}
 	public void StartCooldown(float duration)
 	{
+		ready = false;
 		TotalTime = duration;
 		m_RemainingTime = duration;
 	}

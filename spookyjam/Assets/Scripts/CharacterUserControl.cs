@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class CharacterUserControl : MonoBehaviour
@@ -15,6 +16,10 @@ public class CharacterUserControl : MonoBehaviour
     private bool powerEnabled = false;
     private GameObject phasingZone = null;
     private Dictionary<string, bool> powerReady;
+
+    public GameObject fuegoUI;
+    public GameObject waterUI;
+    public GameObject rockUI;
 
     // Start is called before the first frame update
     void Start()
@@ -37,10 +42,94 @@ public class CharacterUserControl : MonoBehaviour
         m_Animator.SetFloat("XSpeed", m_Rigidbody.velocity.x);
         m_Animator.SetFloat("YSpeed", m_Rigidbody.velocity.y);
 
+
+
+        switch (powerName)
+        {
+            case "Fire":
+                CooldownRadial crf = fuegoUI.GetComponent<CooldownRadial>();
+                if (crf)
+                {
+                    if (crf.activated && crf.ready)
+                    {
+                        if (m_CanvasMessage != null)
+                            m_CanvasMessage.SetActive(powerEnabled && powerReady[powerName]);
+                    }
+                }
+                break;
+
+            case "Ice":
+                CooldownRadial crw = waterUI.GetComponent<CooldownRadial>();
+                if (crw)
+                {
+                    if (crw.activated && crw.ready)
+                    {
+                        if (m_CanvasMessage != null)
+                            m_CanvasMessage.SetActive(powerEnabled && powerReady[powerName]);
+                    }
+                }
+                break;
+
+            case "Rock":
+                CooldownRadial cr = rockUI.GetComponent<CooldownRadial>();
+                if (cr)
+                {
+                    if (cr.activated && cr.ready)
+                    {
+                        if (m_CanvasMessage != null)
+                            m_CanvasMessage.SetActive(powerEnabled && powerReady[powerName]);
+                    }
+                }
+                break;
+        }
+
+
+
+
         if (Input.GetKey(m_PowerButton) && powerEnabled && powerReady[powerName] && phasingZone != null)
         {
-            phasingZone.SetActive(false);
-            m_CanvasMessage.SetActive(false);
+            switch (powerName)
+            {
+                case "Fire":
+                    CooldownRadial crf = fuegoUI.GetComponent<CooldownRadial>();
+                    if (crf)
+                    {
+                        if (crf.activated &&crf.ready)
+                        {
+                            phasingZone.SetActive(false);
+                            m_CanvasMessage.SetActive(false);
+                            crf.StartCooldown(5);
+                        }
+                    }
+                    break;
+
+                case "Ice":
+                    CooldownRadial crw = waterUI.GetComponent<CooldownRadial>();
+                    if (crw)
+                    {
+                        if (crw.activated && crw.ready)
+                        {
+                            phasingZone.SetActive(false);
+                            m_CanvasMessage.SetActive(false);
+                            crw.StartCooldown(5);
+                        }
+                    }
+                    break;
+
+                case "Rock":
+                    CooldownRadial cr = rockUI.GetComponent<CooldownRadial>();
+                    if (cr)
+                    {
+                        if (cr.activated && cr.ready)
+                        {
+                            phasingZone.SetActive(false);
+                            m_CanvasMessage.SetActive(false);
+                            cr.StartCooldown(5);
+                        }
+                    }
+                    break;
+            }
+            
         }
     }
 
@@ -49,8 +138,8 @@ public class CharacterUserControl : MonoBehaviour
         powerName = power;
         powerEnabled = enabled;
 
-        if (m_CanvasMessage != null)
-            m_CanvasMessage.SetActive(powerEnabled && powerReady[powerName]);
+
+
 
         if (zone != null)
         {

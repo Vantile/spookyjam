@@ -31,37 +31,8 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("z")) 
-        {
-            Debug.Log("pulsa z");
-            CooldownRadial timer = CooldownFire.GetComponent<CooldownRadial>();
-            if(timer != null)
-            {
-                timer.StartCooldown(5);
-            }
-        }
+    void Update() { 
 
-        if (Input.GetKeyDown("x"))
-        {
-            Debug.Log("pulsa x");
-            CooldownRadial timer = CooldownFreeze.GetComponent<CooldownRadial>();
-            if (timer != null)
-            {
-                timer.StartCooldown(5);
-            }
-        }
-
-        if (Input.GetKeyDown("c"))
-        {
-            Debug.Log("pulsa c");
-            CooldownRadial timer = CooldownRock.GetComponent<CooldownRadial>();
-            if (timer != null)
-            {
-                timer.StartCooldown(5);
-            }
-        }
     }
 
 
