@@ -25,6 +25,7 @@ public class TaskItem : MonoBehaviour
 
     public void UpdateUI()
     {
+        currentItems++;
         if(currentItems == maxItems)
         {
             TaskFinished();
@@ -38,7 +39,7 @@ public class TaskItem : MonoBehaviour
     //TODO: Informar a algún script de que se ha finalizado la tarea
     void TaskFinished()
     {
-        print("Inform someone the task is finished");
+        GameManager.instance.UpdateTasks();
     }
 
     //Testeo
