@@ -6,11 +6,12 @@ public class Door : MonoBehaviour
 {
 
     public enum State { CLOSED, OPEN } //dos estados abierta y cerrada
-    public int id_door; //numero identificador de cada puerta
-    public string door_open;
     public AudioSource door_audio;
+    public GameObject lever;
+    public Sprite newSprite;
 
     private State door_state = State.CLOSED; //inicialmente esta cerrada
+    private bool playerRange = false;
     Animator door_animator;
 
 
@@ -24,26 +25,35 @@ public class Door : MonoBehaviour
         door_animator = GetComponent<Animator>();
     }
 
-    void OnTriggerActivate(int activateDoor)
+    void OnTriggerEnter2D(Collider2D obj)
+    {
+        if (obj.gameObject.tag == "Player")
+            playerRange = true;
+
+    }
+
+    void removeCollider()
+    {
+        BoxCollider2D[] colliders = this.GetComponents<BoxCollider2D>();
+        for (int i = 0;i < colliders.Length; i++)
+        {
+            colliders[i].enabled = false;
+            print("dasas");
+        }
+    }
+
+    private void Update()
     {
         if (DoorState == State.CLOSED)
         {
-            if (activateDoor == id_door)//si el numero que recibe al activar es el de esta puerta, se abre
+            if (playerRange)
             {
                 door_state = State.OPEN;
                 door_animator.SetTrigger("Open");
                 door_audio.Play();
-            }
-        }
-    }
+                lever.GetComponent<SpriteRenderer>().sprite = newSprite;
 
-    //Testing
-    private void Update()
-    {
-        if (Input.anyKeyDown)
-        {
-            door_animator.SetTrigger("Open");
-            print("a");
+            }
         }
     }
 
