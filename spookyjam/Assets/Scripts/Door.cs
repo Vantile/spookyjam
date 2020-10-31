@@ -38,6 +38,7 @@ public class Door : MonoBehaviour
         for (int i = 0;i < colliders.Length; i++)
         {
             colliders[i].enabled = false;
+            this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 
