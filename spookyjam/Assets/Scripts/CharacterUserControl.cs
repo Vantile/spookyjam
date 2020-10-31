@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CharacterUserControl : MonoBehaviour
 {
-    [SerializeField] private float speed = 1;
+    [SerializeField] private float speed = 50000;
     [SerializeField] private string _powerButton = "space";
 
-    private Rigidbody m_Rigidbody;
+    private Rigidbody2D m_Rigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody>();
+        m_Rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
@@ -20,8 +20,8 @@ public class CharacterUserControl : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        Vector3 movement = h * Vector3.right + v * Vector3.forward;
-        m_Rigidbody.AddForce(movement * speed);
+        Vector2 movement = h * Vector2.right + v * Vector2.up;
+        m_Rigidbody.velocity = (movement * speed);
 
         //bool power = Input.GetKey(_powerButton);
     }
