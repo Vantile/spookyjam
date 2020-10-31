@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: 3a28337e88c5ae34a8acc4f79eaf4463
+guid: 753ddc93fbe53e7408a9f4e79856c5f1
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 863046331090388539
-    second: activador_0
-  - first:
-      213: -5512832111803213005
-    second: activador_1
-  - first:
-      213: 7231671464227276134
-    second: activador_2
-  - first:
-      213: -3992589307662292747
-    second: activador_3
-  - first:
-      213: -3667048125269069275
-    second: activador_4
-  - first:
-      213: 7962089634001987006
-    second: activador_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -59,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,70 +87,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: activador_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b36c855c0182afb00800000000000000
-      internalID: 863046331090388539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: activador_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33b5a9d076c7e73b0800000000000000
-      internalID: -5512832111803213005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: activador_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6658895b1ee0c5460800000000000000
-      internalID: 7231671464227276134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
