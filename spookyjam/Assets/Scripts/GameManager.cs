@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public GameObject CooldownFire;
-    public GameObject CooldownFreeze;
-    public GameObject CooldownRock;
+
+    [SerializeField]
+    int numTasks = 2;
+
+    int currentTasks = 0;
 
     //Singleton
     private void Awake()
@@ -24,24 +26,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void UpdateTasks()
     {
-        
+        currentTasks++;
+        if(currentTasks == numTasks)
+        {
+            Win();
+        }
     }
 
-    // Update is called once per frame
-    void Update() { 
-
+    void Win()
+    {
+        SceneManager.LoadScene("GameFinishScene");
     }
-
 
     //Function called when the player loses
     public void GameOver()
     {
-        //TODO: Implement this
-        SceneManager.LoadScene(3);
-        print("The player has lost the game.");
+        SceneManager.LoadScene("GameOverScene");
     }
 
 
