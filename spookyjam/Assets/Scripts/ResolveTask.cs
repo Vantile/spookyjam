@@ -5,11 +5,10 @@ using UnityEngine;
 public class ResolveTask : MonoBehaviour
 {
     public enum State { UNDONE, DONE } //dos estados abierta y cerrada
-    public GameObject task_object;
+    public GameObject task_object, taskText;
     public Sprite newSprite;
 
     private State task_state = State.UNDONE; //inicialmente esta cerrada
-    private bool playerRange = false;
 
 
     public State TaskState
@@ -20,22 +19,12 @@ public class ResolveTask : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        if (obj.gameObject.tag == "Player")
-            playerRange = true;
-
-    }
-
-
-    private void Update()
-    {
-        if (TaskState == State.UNDONE)
+        if (obj.gameObject.tag == "Player" && task_state == State.UNDONE)
         {
-            if (playerRange)
-            {
-                task_state = State.DONE;
-                task_object.GetComponent<SpriteRenderer>().sprite = newSprite;
-
-            }
+            task_state = State.DONE;
+            task_object.GetComponent<SpriteRenderer>().sprite = newSprite;
+            taskText.GetComponent<TaskItem>().UpdateUI();
         }
+
     }
 }
