@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4001206621225178602}
   m_Layer: 0
   m_Name: Rocks
-  m_TagString: Untagged
+  m_TagString: RockZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 7242970287811848671}
   m_Layer: 0
   m_Name: PhasingRock 1
-  m_TagString: Untagged
+  m_TagString: RockZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
