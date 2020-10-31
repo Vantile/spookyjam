@@ -12,6 +12,15 @@ public class GameManager : MonoBehaviour
 
     int currentTasks = 0;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            print("Exiting");
+        }
+    }
+
     //Singleton
     private void Awake()
     {
