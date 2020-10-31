@@ -1419,9 +1419,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
-        width: 16
-        height: 16
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1431,27 +1431,6 @@ TextureImporter:
       bones: []
       spriteID: ff88d61ed7b197ba0800000000000000
       internalID: -6090806793574971137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_31
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcec804448bbe7710800000000000000
-      internalID: 1692996686689390283
       vertices: []
       indices: 
       edges: []
@@ -1482,9 +1461,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 208
-        width: 16
-        height: 16
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1494,27 +1473,6 @@ TextureImporter:
       bones: []
       spriteID: 2d8787118ea2c89f0800000000000000
       internalID: -464949485312116526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_34
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b454bbf9b152d5f40800000000000000
-      internalID: 5718767902404592971
       vertices: []
       indices: 
       edges: []
@@ -1566,9 +1524,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 208
-        width: 16
-        height: 16
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,69 +1536,6 @@ TextureImporter:
       bones: []
       spriteID: 0d3c65d46f8975da0800000000000000
       internalID: -5956123798547282992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_38
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bc0f12bc9e8d59e0800000000000000
-      internalID: -1630990686383829831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_39
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2ef1e120a0a69150800000000000000
-      internalID: 5879062973202431534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_40
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9e3e9b79267288c0800000000000000
-      internalID: -3998503598611874150
       vertices: []
       indices: 
       edges: []
@@ -1662,48 +1557,6 @@ TextureImporter:
       bones: []
       spriteID: 957213cae2424bac0800000000000000
       internalID: -3840404799364192423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_42
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7eb4efccf5db63a0800000000000000
-      internalID: -6671003141222908289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_43
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd2234d3ecf2f1b30800000000000000
-      internalID: 4260176335353357023
       vertices: []
       indices: 
       edges: []
@@ -1746,48 +1599,6 @@ TextureImporter:
       bones: []
       spriteID: 4b96a4da920a87880800000000000000
       internalID: -8612958186484635212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_46
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1848c255814063300800000000000000
-      internalID: 231376933410866305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial-sprite-sheet-DeadEnd-LMZ_47
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32198d83b6e6bc2e0800000000000000
-      internalID: -2104466994071301853
       vertices: []
       indices: 
       edges: []
