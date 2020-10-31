@@ -125,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 107824514029236287}
   - component: {fileID: 7021506965698894643}
+  - component: {fileID: 4261989669756216503}
   m_Layer: 0
   m_Name: Activador
   m_TagString: Untagged
@@ -172,6 +173,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &4261989669756216503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5148957741657597720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ba6073a67ecd543940d50d25d72e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PhasingType: Fire
+  m_Player: {fileID: 0}
 --- !u!1 &5179602071053119279
 GameObject:
   m_ObjectHideFlags: 0
