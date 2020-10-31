@@ -186,7 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PhasingType: Fire
-  m_Player: {fileID: 0}
 --- !u!1 &5179602071053119279
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +199,7 @@ GameObject:
   - component: {fileID: 2963515777072554963}
   m_Layer: 0
   m_Name: Lava #4
-  m_TagString: Untagged
+  m_TagString: FireZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

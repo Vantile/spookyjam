@@ -6,7 +6,7 @@ public class PhasingFloor : MonoBehaviour
 {
     [SerializeField] private string m_PhasingType;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -14,11 +14,20 @@ public class PhasingFloor : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
             other.gameObject.GetComponent<CharacterUserControl>().setPhasing(m_PhasingType, false, null);
+
+            Transform parentZone = this.gameObject.transform.parent;
+            for (int i = 0; i < parentZone.childCount; i++)
+            {
+                if (parentZone.GetChild(i).tag == m_PhasingType + "Zone")
+                {
+                    parentZone.GetChild(i).gameObject.SetActive(true);
+                }
+            }
         }
     }
 }

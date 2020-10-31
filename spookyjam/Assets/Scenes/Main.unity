@@ -719,6 +719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e3065d811cbad4f9716057c51279be, type: 3}
+--- !u!1 &1237819512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3003232198324079681, guid: 91e3065d811cbad4f9716057c51279be, type: 3}
+  m_PrefabInstance: {fileID: 1237819511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1539480967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -726,6 +731,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2091435047613718468, guid: 56d08ceb10313034a91383e1a6caa092, type: 3}
+      propertyPath: m_CanvasMessage
+      value: 
+      objectReference: {fileID: 1237819512}
     - target: {fileID: 2271452890569275256, guid: 56d08ceb10313034a91383e1a6caa092, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0

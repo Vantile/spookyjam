@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CharacterUserControl : MonoBehaviour
 {
-    [SerializeField] private float speed = 1;
-    [SerializeField] private string _powerButton = "space";
+    [SerializeField] private float m_Speed = 1;
+    [SerializeField] private string m_PowerButton = "space";
+    [SerializeField] private GameObject m_CanvasMessage;
+    [SerializeField] private bool m_GodMode = false;
 
     private Rigidbody2D m_Rigidbody;
-    Animator m_Animator;
+    private Animator m_Animator;
     private string powerName;
     private bool powerEnabled = false;
     private GameObject phasingZone = null;
@@ -19,9 +21,10 @@ public class CharacterUserControl : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
-        powerReady["Fire"] = false;
-        powerReady["Ice"] = false;
-        powerReady["Rock"] = false;
+        powerReady = new Dictionary<string, bool>();
+        powerReady["Fire"] = m_GodMode;
+        powerReady["Ice"] = m_GodMode;
+        powerReady["Rock"] = m_GodMode;
     }
 
     private void FixedUpdate()
@@ -30,12 +33,15 @@ public class CharacterUserControl : MonoBehaviour
         float v = Input.GetAxis("Vertical");
 
         Vector2 movement = h * Vector2.right + v * Vector2.up;
-        m_Rigidbody.velocity = (movement * speed);
+        m_Rigidbody.velocity = (movement * m_Speed);
         m_Animator.SetFloat("XSpeed", m_Rigidbody.velocity.x);
         m_Animator.SetFloat("YSpeed", m_Rigidbody.velocity.y);
 
-        if (Input.GetKey(_powerButton) && powerEnabled && powerReady[powerName] && phasingZone != null)
+        if (Input.GetKey(m_PowerButton) && powerEnabled && powerReady[powerName] && phasingZone != null)
+        {
             phasingZone.SetActive(false);
+            m_CanvasMessage.SetActive(false);
+        }
     }
 
     public void setPhasing(string power, bool enabled, GameObject zone)
@@ -43,10 +49,8 @@ public class CharacterUserControl : MonoBehaviour
         powerName = power;
         powerEnabled = enabled;
 
-        if (!enabled)
-        {
-            // TODO Activar cooldown del poder
-        }
+        if (m_CanvasMessage != null)
+            m_CanvasMessage.SetActive(powerEnabled && powerReady[powerName]);
 
         if (zone != null)
         {
@@ -55,7 +59,7 @@ public class CharacterUserControl : MonoBehaviour
             {
                 if (parentZone.GetChild(i).tag == powerName + "Zone")
                 {
-                    GameObject phasingZone = parentZone.GetChild(i).gameObject;
+                    phasingZone = parentZone.GetChild(i).gameObject;
                 }
             }
         }

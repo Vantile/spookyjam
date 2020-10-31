@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315e7b2e8c3700c48aa408dcf8a3e5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  _powerButton: space
+  m_Speed: 1
+  m_PowerButton: space
+  m_GodMode: 1
 --- !u!61 &5365271253149091541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3342477244361338307, guid: d8d26aba5a814b6419f2215b3827a5ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
