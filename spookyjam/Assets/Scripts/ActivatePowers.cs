@@ -28,6 +28,7 @@ public class ActivatePowers : MonoBehaviour
             if (cr)
             {
                 cr.activated = true;
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
         }
     }
