@@ -15,7 +15,7 @@ public class TaskItem : MonoBehaviour
 
     Text textUI;
 
-    int currentItems = 0;
+    int currentItems = -1;
 
     void Start()
     {
