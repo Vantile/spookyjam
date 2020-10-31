@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &35709240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4738436407231364056, guid: 91e3065d811cbad4f9716057c51279be, type: 3}
+  m_PrefabInstance: {fileID: 1237819511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &68972991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,6 +531,10 @@ PrefabInstance:
       propertyPath: newSprite
       value: 
       objectReference: {fileID: 7605916818409953116, guid: 4c28ee570091b2f47aeeb1483c9d0348, type: 3}
+    - target: {fileID: 8458084648402656575, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 35709240}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
 --- !u!1001 &1027613730
@@ -958,6 +967,10 @@ PrefabInstance:
       propertyPath: newSprite
       value: 
       objectReference: {fileID: 5563495514790442994, guid: 4c28ee570091b2f47aeeb1483c9d0348, type: 3}
+    - target: {fileID: 8458084648402656575, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 35709240}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
 --- !u!1001 &1237819511
@@ -1173,6 +1186,10 @@ PrefabInstance:
       propertyPath: newSprite
       value: 
       objectReference: {fileID: 7508025749052507544, guid: 4c28ee570091b2f47aeeb1483c9d0348, type: 3}
+    - target: {fileID: 8458084648402656575, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 35709240}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c84ac4b7e3409546a637acc4958a095, type: 3}
 --- !u!1001 &1539480967
@@ -1426,6 +1443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generator2
       objectReference: {fileID: 0}
+    - target: {fileID: 6027132814049031402, guid: d091995454599364a93556fe7ee32df6, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 1891286748}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d091995454599364a93556fe7ee32df6, type: 3}
 --- !u!1 &1868149808
@@ -1520,6 +1541,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1891286748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8426036246976807767, guid: 91e3065d811cbad4f9716057c51279be, type: 3}
+  m_PrefabInstance: {fileID: 1237819511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909314822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1840,6 +1866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generator1
       objectReference: {fileID: 0}
+    - target: {fileID: 6027132814049031402, guid: d091995454599364a93556fe7ee32df6, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 1891286748}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d091995454599364a93556fe7ee32df6, type: 3}
 --- !u!1001 &6062652803845126183
