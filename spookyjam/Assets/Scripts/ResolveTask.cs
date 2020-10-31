@@ -7,6 +7,7 @@ public class ResolveTask : MonoBehaviour
     public enum State { UNDONE, DONE } //dos estados abierta y cerrada
     public GameObject task_object, taskText;
     public Sprite newSprite;
+    public AudioSource task_audio;
 
     private State task_state = State.UNDONE; //inicialmente esta cerrada
 
@@ -24,6 +25,7 @@ public class ResolveTask : MonoBehaviour
             task_state = State.DONE;
             task_object.GetComponent<SpriteRenderer>().sprite = newSprite;
             taskText.GetComponent<TaskItem>().UpdateUI();
+            task_audio.Play();
         }
 
     }
