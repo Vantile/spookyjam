@@ -38,7 +38,6 @@ public class Door : MonoBehaviour
         for (int i = 0;i < colliders.Length; i++)
         {
             colliders[i].enabled = false;
-            print("dasas");
         }
     }
 
