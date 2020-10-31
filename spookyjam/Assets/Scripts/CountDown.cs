@@ -5,18 +5,17 @@ using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour
 {
-    //Editor variables
+    //Tiempo total
     [SerializeField]
     int timerSeconds = 300;
-    [SerializeField]
+
     Text timerText;
 
-    //Private variables
     int tenths, seconds, minutes;
 
-    // Start is called before the first frame update
     void Start()
     {
+        timerText = GetComponent<Text>();
         tenths = 0;
         minutes = timerSeconds / 60;
         seconds = timerSeconds % 60;
@@ -27,8 +26,11 @@ public class CountDown : MonoBehaviour
     {
         while (true)
         {
+            //Actualizamos la UI y esperamos una decima de segundo
             UpdateUI();
             yield return new WaitForSeconds(0.1f);
+
+            //Actualizamos las variables del temporizador
             tenths--;
             if(tenths < 0)
             {
