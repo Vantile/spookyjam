@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315e7b2e8c3700c48aa408dcf8a3e5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 1
+  m_Speed: 8
   m_PowerButton: space
+  m_CanvasMessage: {fileID: 0}
   m_GodMode: 1
 --- !u!61 &5365271253149091541
 BoxCollider2D:
