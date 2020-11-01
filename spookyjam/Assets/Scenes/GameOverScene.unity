@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 465202252}
   - component: {fileID: 465202254}
   - component: {fileID: 465202253}
+  - component: {fileID: 465202256}
   - component: {fileID: 465202255}
   m_Layer: 5
   m_Name: PressEnterToReset
@@ -426,6 +427,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
+--- !u!114 &465202256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465202251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd3a6ea4d1696145877f488a10a1931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeRate: 0.01
 --- !u!1 &1001713882
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603f400adcc594c409781946535fe3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainGameSceneIndex: 1
+  m_SceneIndex: 0
+  m_ChangeKey: return
 --- !u!1 &1779252362
 GameObject:
   m_ObjectHideFlags: 0
