@@ -39,13 +39,13 @@ public class ActivatePowers : MonoBehaviour
                 switch(power)
                 {
                     case POWER.FIRE:
-                        message = "Technology upgraded! You can now put out fires!";
+                        message = "Technology upgraded! You can now turn fire into grass!";
                         break;
                     case POWER.ICE:
                         message = "Technology upgraded! You can now freeze water!";
                         break;
                     case POWER.GROUND:
-                        message = "Technology upgraded! You can now break rocks!";
+                        message = "Technology upgraded! You can now turn rocks into sand!";
                         break;
                 }
                 advice.showAdvice(message);
