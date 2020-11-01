@@ -40,19 +40,20 @@ public class GameManager : MonoBehaviour
         currentTasks++;
         if(currentTasks == numTasks)
         {
-            currentTasks = 0;
             Win();
         }
     }
 
     void Win()
     {
+        currentTasks = 0;
         SceneManager.LoadScene("GameFinishScene");
     }
 
     //Function called when the player loses
     public void GameOver()
     {
+        currentTasks = 0;
         SceneManager.LoadScene("GameOverScene");
     }
 
