@@ -12,14 +12,14 @@ public class BlinkText : MonoBehaviour
     float newValue;
 
     [SerializeField]
-    float changeRate = 0.01f;
+    float changeRate = 0.03f;
 
     private void Start()
     {
         t = GetComponent<Text>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (s == State.up)
         {
