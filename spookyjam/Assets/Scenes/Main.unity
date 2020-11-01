@@ -281,6 +281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4218645989003686269, guid: 57c1e49b653ff304fafd780dbbda4d23, type: 3}
+      propertyPath: m_canvasAdvice
+      value: 
+      objectReference: {fileID: 1237819513}
     - target: {fileID: 8198928406236244098, guid: 57c1e49b653ff304fafd780dbbda4d23, type: 3}
       propertyPath: poderUI
       value: 
@@ -2053,6 +2057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActivadorRoca
       objectReference: {fileID: 0}
+    - target: {fileID: 7343093484267504734, guid: 462fbe0a213c433488104bb070e0ed87, type: 3}
+      propertyPath: m_canvasAdvice
+      value: 
+      objectReference: {fileID: 1237819513}
     - target: {fileID: 9014871158745452188, guid: 462fbe0a213c433488104bb070e0ed87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.04
@@ -2167,6 +2175,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6062652804408616459, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
+      propertyPath: m_Tiles.Array.data[603].second.m_TileSpriteIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062652804408616459, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[7].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062652804408616459, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[7].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062652804408616459, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[8].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062652804408616459, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[8].m_Data
+      value: 
+      objectReference: {fileID: -1797890396807511766, guid: 4c28ee570091b2f47aeeb1483c9d0348, type: 3}
     - target: {fileID: 6062652804677092211, guid: f2bcefadebae7af4ea92e380d0947c28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5532,6 +5560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActivadorAgua
       objectReference: {fileID: 0}
+    - target: {fileID: 7339674206221386830, guid: 9fad01fd0c8a0ae49adf74662ecbdcad, type: 3}
+      propertyPath: m_canvasAdvice
+      value: 
+      objectReference: {fileID: 1237819513}
     - target: {fileID: 8070329525559767876, guid: 9fad01fd0c8a0ae49adf74662ecbdcad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.97
