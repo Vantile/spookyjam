@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 2727074687553069503}
   - component: {fileID: 2831797580999671081}
   - component: {fileID: 1904221000327704194}
+  - component: {fileID: 7339674206221386830}
   m_Layer: 0
   m_Name: plataforma
   m_TagString: Untagged
@@ -361,3 +362,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poderUI: {fileID: 0}
+  power: 1
+--- !u!114 &7339674206221386830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586942653806696353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f8c26896446ba4fbb57c9701e67bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_canvasAdvice: {fileID: 0}
