@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         currentTasks++;
         if(currentTasks == numTasks)
         {
+            currentTasks = 0;
             Win();
         }
     }
