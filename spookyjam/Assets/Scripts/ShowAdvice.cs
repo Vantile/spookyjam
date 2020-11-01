@@ -19,6 +19,7 @@ public class ShowAdvice : MonoBehaviour
             yield return new WaitForSeconds(3.0f);
             m_canvasAdvice.gameObject.SetActive(false);
             m_canvasAdvice.text = "";
+            Destroy(this);
         }
     }
 }
